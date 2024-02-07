@@ -42,7 +42,7 @@ export default function L3D() {
   return (
     <main className="relative">
       <section className="flex flex-col h-svh pt-20 bg-[color:rgb(var(--first-bg-rgb))]">
-        <div className="flex flex-1 flex-col lg:flex-row justify-center items-center px-12 2xl:p-36 gap-x-20">
+        <div className="flex flex-1 flex-col lg:flex-row justify-center items-center px-12 2xl:px-36 gap-x-20">
           <Image width={700} height={500} className="hidden lg:block h-80" src="/l3d_anim.gif" alt="Animation of LCODE 2D" />
           <div className="flex flex-col gap-y-9 items-start">
             <h2 className="text-3xl lg:text-6xl">LCODE 3D</h2>

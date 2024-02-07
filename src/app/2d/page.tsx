@@ -41,7 +41,7 @@ export default function L2D() {
     return (
       <main className="relative">
         <section className="flex flex-col h-svh pt-20 bg-[color:rgb(var(--first-bg-rgb))]">
-          <div className="flex flex-1 flex-col lg:flex-row justify-center items-center px-12 2xl:p-36 gap-x-20">
+          <div className="flex flex-1 flex-col lg:flex-row justify-center items-center px-12 2xl:px-36 gap-x-20">
             <Image width={1078} height={535} className="hidden lg:block h-56" src="/l2d_anim.gif" alt="Animation of LCODE 2D" />
             <div className="flex flex-col gap-y-9 items-start">
               <h2 className="text-3xl lg:text-6xl">LCODE 2D</h2>

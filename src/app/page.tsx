@@ -1,3 +1,4 @@
+import TheoryList, { LinkList } from "@/components/TheoryList";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,16 +16,28 @@ export const metadata: Metadata = {
 }
 
 export default function L3D() {
-  const links = [
+  const links: LinkList = [
     {
-      id: 1,
-      link: "https://arxiv.org/abs/2401.11924",
-      text: "LCODE: Quasistatic code for simulating long-term evolution of three-dimensional plasma wakefields"
+      title: "Quasistatic model",
+      links: [{
+        text: "Advantages",
+        link: "https://doi.org/10.1134/S1063780X22601249",
+        arxiv: "https://doi.org/10.48550/arXiv.2205.04390"
+        },
+        {
+          text: "Energy diagnostics",
+          link: "http://dx.doi.org/10.1103/PhysRevE.69.046405"
+        },
+      ]
     },
     {
-      id: 2,
-      link: "https://www.sciencedirect.com/science/article/abs/pii/S0168900215016034",
-      text: "LCODE: A parallel quasistatic code for computationally heavy problems of plasma wakefield acceleration"
+      title: "LCODE 3D",
+      links: [
+        {
+          text: "Beam and plasma solvers, declustering",
+          link: "https://arxiv.org/abs/2401.11924"
+        }
+      ]
     }
   ]
   const props = [
@@ -57,12 +70,7 @@ export default function L3D() {
           <h2 id="test" className="self-center text-5xl mb-8 lg:mb-16">Theory</h2>
           <p className="mb-4">You can read more about quasi-static modeling and code construction in the following articles:
           </p>
-          <ul className="list-disc">
-              {links.map(({ id, link, text }) => (
-                  <li key={id}>{text} <a href={link} className="hover:text-blue-500 hover:underline" target="_blank">[Link]</a></li>
-              ))}
-              
-          </ul>
+          <TheoryList links={links} />
         </div>
       </section>
       <section id="why-lcode" className="">

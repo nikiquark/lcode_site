@@ -3,8 +3,9 @@ import Image from "next/image";
 import { FaAngleDown } from "react-icons/fa";
 import Link from "next/link";
 import { IoMdDocument } from "react-icons/io";
-
-
+import TheoryList, {LinkList} from "@/components/TheoryList";
+import { IoInformationCircleOutline } from "react-icons/io5";
+import HoverInfo from "@/components/HoverInfo";
 export const metadata: Metadata = {
     title: "LCODE 2D —  code for simulations of plasma wakefield acceleration",
     description: "LCODE is a freely-distributed code for simulations of particle beam-driven plasma wake eld acceleration. The quasi-static approximation is used for calculating plasma response. The beams are modeled by fully relativistic macro-particles.",
@@ -13,19 +14,48 @@ export const metadata: Metadata = {
     }
 }
 
+
+
 export default function L2D() {
-    const links = [
+    const links: LinkList = [
       {
-        id: 1,
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0168900215016034",
-        text: "LCODE: A parallel quasistatic code for computationally heavy problems of plasma wakefield acceleration"
+        title: "Quasistatic model",
+        links: [{
+          text: "Advantages",
+          link: "https://doi.org/10.1134/S1063780X22601249",
+          arxiv: "https://doi.org/10.48550/arXiv.2205.04390"
+          },
+          {
+            text: "Energy diagnostics",
+            link: "http://dx.doi.org/10.1103/PhysRevE.69.046405"
+          },
+        ]
       },
       {
-        id: 2,
-        link: "https://pubs.aip.org/aip/pop/article-abstract/5/3/785/263445/Simulation-of-ultrarelativistic-beam-dynamics-in",
-        text: "Simulation of ultrarelativistic beam dynamics in plasma wake-field accelerators "
+        title: "LCODE 2D",
+        links: [
+          {
+            text: "Kinetic model",
+            link: "http://dx.doi.org/10.1103/PhysRevSTAB.6.061301"
+          },
+          {
+            text: "Fluid model",
+            link: "http://dx.doi.org/10.1063/1.872765",
+          },
+          {
+            text: "Parallelization",
+            link: "http://dx.doi.org/10.1016/j.nima.2015.12.032",
+            arxiv: "https://doi.org/10.48550/arXiv.1511.04193"
+          },
+          {
+            text: "Manual",
+            link: "https://lcode.info/site-files/manual.pdf",
+          },
+        ]
       }
     ]
+      
+      
     const props = [
       {
         id: 1,
@@ -57,10 +87,7 @@ export default function L2D() {
             <p className="mb-4">You can read more about quasi-static modeling and code construction in the following articles:
             </p>
             <ul className="list-disc">
-                {links.map(({ id, link, text }) => (
-                    <li key={id}>{text} <a href={link} className="hover:text-blue-500 hover:underline" target="_blank">[Link]</a></li>
-                ))}
-                
+                <TheoryList links={links}/>
             </ul>
           </div>
         </section>
@@ -88,11 +115,43 @@ export default function L2D() {
               </div>
               <div className="flex">
                 <IoMdDocument />
-                <a className="hover:underline" target="_blank" href="https://lcode.info/site-files/lcode.exe">Executable for Windows</a>
+                <a className="hover:underline whitespace-nowrap" target="_blank" href="https://lcode.info/site-files/lcode.exe">Executable for Windows</a>
+                <HoverInfo>
+                  <pre>
+{"\
+Install MSMPI (runtime)\n\
+  https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi\n\
+\n\
+For serial running:\n\
+  put lcode.exe in working directory with your lcode.cfg and run it with double-click\n\
+\n\
+For parallel running:\n\
+  put lcode.exe in working directory with your lcode.cfg\n\
+  and run 'mpiexec -n <cpu-number> lcode.exe' in command line\n\
+\n\
+\n\
+If you have any problem with it, feel free to contact us. \n\
+"}
+                  </pre>
+                </HoverInfo>
               </div>
               <div className="flex">
                 <IoMdDocument />
                 <a className="hover:underline" target="_blank" href="https://lcode.info/site-files/lcode-mpi-halfbaked.run">Executable for Linux</a>
+                <HoverInfo>
+                  <pre className="">
+{"\
+`lcode-mpi-halfbaked.run`, should be executed on working host,\n\
+  will perform the final compilation step,\n\
+  linking the otherwise-precompiled LCODE with that host&apos;s MPI.\n\
+  This is theoretically unsupported, but works like a charm.\n\
+\n\
+It will produce lcode in current directory.\n\
+\n\
+If you have any problem with it, feel free to contact us. \n\
+"}
+                  </pre>
+                </HoverInfo>
               </div>
               
             </div>

@@ -8,7 +8,7 @@ import { IoInformationCircleOutline } from "react-icons/io5";
 import HoverInfo from "@/components/HoverInfo";
 export const metadata: Metadata = {
     title: "LCODE 2D — Код для моделирования кильватерного ускорения",
-    description: "LCODE - это свободно распространяемый код для моделирования ускорения вейк-поля плазмы, управляемого пучком частиц. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.",
+    description: "LCODE - это свободно распространяемый код для моделирования кильватерного ускорения. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.",
     alternates: {
       canonical: "/ru/2d",
     }
@@ -75,7 +75,7 @@ export default function L2D() {
             <img width={1078} height={535} className="hidden lg:block h-56" src="/l2d_anim.gif" alt="Animation of LCODE 2D" />
             <div className="flex flex-col gap-y-9 items-start">
               <h2 className="text-3xl lg:text-6xl">LCODE 2D</h2>
-              <p className="text-xl lg:text-2xl xl:text-3xl">LCODE - это свободно распространяемый код для моделирования ускорения вейк-поля плазмы, управляемого пучком частиц. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.</p>
+              <p className="text-xl lg:text-2xl xl:text-3xl">LCODE - это свободно распространяемый код для моделирования кильватерного ускорения. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.</p>
               <Link className="text-xl bg-gradient-to-r from-blue-500 to-green-500 rounded-md p-2 px-4 hover:shadow-[0_0_40px_rgba(8,_112,_184,_0.7)] duration-300" href="#resourses">Try it now</Link>
             </div>
           </div>

@@ -9,7 +9,7 @@ import { SiReadthedocs } from "react-icons/si";
 
 export const metadata: Metadata = {
     title: "LCODE 3D — код для моделирования кильватерного ускорения",
-    description: "LCODE - это свободно распространяемый код для моделирования ускорения вейк-поля плазмы, управляемого пучком частиц. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.",
+    description: "LCODE - это свободно распространяемый код для моделирования кильватерного ускорения. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.",
     alternates: {
       canonical: "/ru",
     }
@@ -59,7 +59,7 @@ export default function L3D() {
           <img width={700} height={500} className="hidden lg:block h-80" src="/l3d_anim.gif" alt="Animation of LCODE 2D" />
           <div className="flex flex-col gap-y-9 items-start">
             <h2 className="text-3xl lg:text-6xl">LCODE 3D</h2>
-            <p className="text-xl lg:text-2xl xl:text-3xl">Недавно разработанная трехмерная версия квазистатического кода LCODE обладает новым свойством, позволяющим с высокой точностью моделировать долговременную эволюцию волн в плазменных вейкфилдах ускорителей.</p>
+            <p className="text-xl lg:text-2xl xl:text-3xl">Недавно разработанная трехмерная версия квазистатического кода LCODE обладает новым свойством, позволяющим с высокой точностью моделировать долговременную эволюцию волн в плазменных кильватерных ускорителях.</p>
             <Link className="text-xl bg-gradient-to-r from-blue-500 to-green-500 rounded-md p-2 px-4 hover:shadow-[0_0_40px_rgba(8,_112,_184,_0.7)] duration-300" href="#resourses">Получить доступ</Link>
           </div>
         </div>

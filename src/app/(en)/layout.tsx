@@ -1,14 +1,24 @@
 import type { Metadata } from "next";
 import { Nanum_Myeongjo } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
+import "@/app/globals.css";
+import Navbar from "./Navbar";
 import Footer from "@/components/Footer";
-import { Providers } from "./provider";
+import { Providers } from "@/app/provider";
 
 const nanum = Nanum_Myeongjo({weight: "400", subsets: ["latin"]});
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://new.lcode.info"),
   title: "LCODE",
+  openGraph: {
+    "title" : "LCODE",
+    "description" : "Code for simulations of plasma wakefield acceleration",
+    "images": [
+      {
+        "url": "/lcode_og.svg"
+      }
+    ]
+  },
 };
 
 export default function RootLayout({

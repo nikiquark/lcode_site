@@ -2,7 +2,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import DarkThemeToggle from "./DarkThemeToggle";
+import DarkThemeToggle from "@/components/DarkThemeToggle";
+import LangSelect from "@/components/LangSelect";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -10,25 +11,25 @@ const Navbar = () => {
     const links = [
         {
             id: 1,
-            link: "/",
+            link: "/ru",
             text: "LCODE 3D"
         },
         {
             id: 2,
-            link: "/2d",
+            link: "/ru/2d",
             text: "LCODE 2D"
         },
         {
             id: 3,
-            link: "/students",
-            text: "For students"
+            link: "/ru/students",
+            text: "Студентам"
         }
     ];
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-2 md:px-10 2xl:px-52 text-white bg-slate-900/70 fixed top-0 z-10">
+        <div className="flex justify-between items-center w-full py-2 md:py-4 px-2 md:px-10 2xl:px-52 text-white bg-slate-900/70 fixed top-0 z-10">
             <div className="flex-1">
-                <h1 className="text-5xl font-signature ml-2 select-none">
+                <h1 className="text-3xl md:text-5xl font-signature ml-2 select-none">
                     LCODE
                 </h1>
             </div>
@@ -60,6 +61,7 @@ const Navbar = () => {
                 ))}
                 </ul>
             )}
+            <LangSelect lang="EN" />
             <DarkThemeToggle />
             <div
                 onClick={() => setNav(!nav)}

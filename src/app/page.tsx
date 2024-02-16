@@ -56,7 +56,7 @@ export default function L3D() {
     <main className="relative">
       <section className="flex flex-col h-svh pt-20 bg-[color:rgb(var(--first-bg-rgb))]">
         <div className="flex flex-1 flex-col lg:flex-row justify-center items-center px-12 2xl:px-36 gap-x-20">
-          <Image width={700} height={500} className="hidden lg:block h-80" src="/l3d_anim.gif" alt="Animation of LCODE 2D" />
+          <img width={700} height={500} className="hidden lg:block h-80" src="/l3d_anim.gif" alt="Animation of LCODE 2D" />
           <div className="flex flex-col gap-y-9 items-start">
             <h2 className="text-3xl lg:text-6xl">LCODE 3D</h2>
             <p className="text-xl lg:text-2xl xl:text-3xl">A recently developed three-dimensional version of the quasistatic code LCODE has a novel feature that enables high-accuracy simulations of the long-term evolution of waves in plasma wakefield accelerators.</p>
@@ -68,7 +68,7 @@ export default function L3D() {
       <section id="theory" className="w-full flex justify-center ">
         <div className="py-16 lg:py-60 lg:px-12 flex flex-col items-begin justify-center w-9/12 lg:text-2xl">
           <h2 id="test" className="self-center text-5xl mb-8 lg:mb-16">Theory</h2>
-          <p className="mb-4">You can read more about quasi-static modeling and code construction in the following articles:
+          <p className="mb-4">You can learn more about quasistatic modeling and code details in the following papers:
           </p>
           <TheoryList links={links} />
         </div>

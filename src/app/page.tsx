@@ -75,7 +75,7 @@ export default function L3D() {
       </section>
       <section id="why-lcode" className="">
         <div className="flex flex-col items-center justify-center py-24 lg:py-56 md:px-32 2xl:px-72 clip-romb-mb lg:clip-romb  bg-[color:rgb(var(--secondary-bg-rgb))]">
-          <h2 className="text-3xl md:text-5xl mb-12">Why LCODE 2D?</h2>
+          <h2 className="text-3xl md:text-5xl mb-12">Why LCODE 3D?</h2>
           <div className="flex flex-col lg:flex-row gap-12">
             {props.map(({ id, title, text }) => (
               <div key={id} className="flex flex-col gap-y-4 items-center">

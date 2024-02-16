@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "description" : "Код для моделирования кильватерного ускорения",
     "images": [
       {
-        "url": "/lcode_og.svg"
+        "url": "/lcode_og.jpg"
       }
     ]
   },

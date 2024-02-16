@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "description" : "Code for simulations of plasma wakefield acceleration",
     "images": [
       {
-        "url": "/lcode_og.svg"
+        "url": "/lcode_og.jpg"
       }
     ]
   },

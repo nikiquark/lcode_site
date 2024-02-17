@@ -1,13 +1,13 @@
-interface Link {
-    link: string,
-    text: string,
-    arxiv?: string
+interface Paper {
+  link: string
+  text: string
+  arxiv?: string
 }
-interface LinkListItem {
-    title: string,
-    links: Link[]
+interface PaperListItem {
+  title: string
+  links: Paper[]
 }
 
-type LinkList = LinkListItem[]
+type PaperList = PaperListItem[]
 
-export type {Link, LinkList};
+export type { Paper, PaperList }

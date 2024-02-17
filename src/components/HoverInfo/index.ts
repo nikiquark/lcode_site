@@ -1,3 +1,3 @@
-import HoverInfo from "./HoverInfo";
+import HoverInfo from './HoverInfo'
 
-export default HoverInfo;
+export default HoverInfo

@@ -8,14 +8,12 @@
   --secondary-bg-rgb: 148, 163, 184;
 }
 
-
-[data-theme='dark']{
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 30, 41, 59;
-    --first-bg-rgb: 0, 0, 0;
-    --secondary-bg-rgb: 100, 116, 139;
+[data-theme='dark'] {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 30, 41, 59;
+  --first-bg-rgb: 0, 0, 0;
+  --secondary-bg-rgb: 100, 116, 139;
 }
-
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,10 +28,9 @@ body {
 
 @layer utilities {
   .clip-romb {
-      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   }
   .clip-romb-mb {
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-}
-
+  }
 }

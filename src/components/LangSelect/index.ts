@@ -1,3 +1,4 @@
-import LangSelect from "./LangSelect";
-
-export default LangSelect;
+import LangSelect from './LangSelect'
+import { Lang } from './types'
+export default LangSelect
+export type { Lang }

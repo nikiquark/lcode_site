@@ -1,6 +1,6 @@
-import { LinkList } from '.'
+import type { PaperList } from '.'
 
-const TheoryList = ({ links }: { links: LinkList }) => {
+const TheoryList = ({ links }: { links: PaperList }) => {
   return (
     <div>
       <ul className="list-disc">

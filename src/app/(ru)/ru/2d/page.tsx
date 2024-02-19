@@ -1,15 +1,13 @@
-import { Metadata } from 'next/types'
-import Image from 'next/image'
-import { FaAngleDown } from 'react-icons/fa'
-import Link from 'next/link'
-import { IoMdDocument } from 'react-icons/io'
-import TheoryList, { PaperList } from '@/components/TheoryList'
-import { IoInformationCircleOutline } from 'react-icons/io5'
 import HoverInfo from '@/components/HoverInfo'
+import TheoryList, { PaperList } from '@/components/TheoryList'
+import Link from 'next/link'
+import { Metadata } from 'next/types'
+import { FaAngleDown } from 'react-icons/fa'
+import { IoMdDocument } from 'react-icons/io'
 export const metadata: Metadata = {
   title: 'LCODE 2D — Код для моделирования кильватерного ускорения',
   description:
-    'LCODE - это свободно распространяемый код для моделирования кильватерного ускорения. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.',
+    'LCODE - это свободно распространяемый код для моделирования плазменного кильватерного ускорения. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.',
   alternates: {
     canonical: '/ru/2d',
   },
@@ -21,12 +19,12 @@ export default function L2D() {
       title: 'Квазистатическое приближение',
       links: [
         {
-          text: 'Преимущества',
+          text: 'Его преимущества',
           link: 'https://doi.org/10.1134/S1063780X22601249',
           arxiv: 'https://doi.org/10.48550/arXiv.2205.04390',
         },
         {
-          text: 'Диагностика энергетических показателей',
+          text: 'Диагностика потоков энергии',
           link: 'http://dx.doi.org/10.1103/PhysRevE.69.046405',
         },
       ],
@@ -59,12 +57,12 @@ export default function L2D() {
     {
       id: 1,
       title: 'Провернный временем',
-      text: 'LCODE 2D, лежащий в основе LCODE 3D, был использован для моделирования большого количества экспериментов и показал хорошую сходимость с экспериментальными результатами',
+      text: 'LCODE 2D был использован для моделирования большого количества задач и показал хорошее согласие с экспериментальными результатами и другими кодами',
     },
     {
       id: 2,
       title: 'Скорость',
-      text: 'Кильватерное ускорение в квазистатическом приближении вычисляется на несколько порядков быстрее, чем в обычных PIC-кодах',
+      text: 'Кильватерное ускорение в квазистатическом приближении вычисляется на несколько порядков быстрее, чем обычными PIC-кодами',
     },
   ]
   return (
@@ -81,10 +79,7 @@ export default function L2D() {
           <div className="flex flex-col gap-y-9 items-start">
             <h2 className="text-3xl lg:text-6xl">LCODE 2D</h2>
             <p className="text-xl lg:text-2xl xl:text-3xl">
-              LCODE - это свободно распространяемый код для моделирования
-              кильватерного ускорения. Для расчета отклика плазмы используется
-              квазистатическое приближение. Пучки моделируются полностью
-              релятивистскими макрочастицами.
+            LCODE - это свободно распространяемый код для моделирования плазменного кильватерного ускорения. Для расчета отклика плазмы используется квазистатическое приближение. Пучки моделируются полностью релятивистскими макрочастицами.
             </p>
             <Link
               className="text-xl bg-gradient-to-r from-blue-500 to-green-500 rounded-md p-2 px-4 hover:shadow-[0_0_40px_rgba(8,_112,_184,_0.7)] duration-300"

@@ -7,7 +7,7 @@ import { SiReadthedocs } from 'react-icons/si'
 export const metadata: Metadata = {
   title: 'LCODE 3D — code for simulations of plasma wakefield acceleration',
   description:
-    'LCODE is a freely-distributed code for simulations of particle beam-driven plasma wake eld acceleration. The quasi-static approximation is used for calculating plasma response. The beams are modeled by fully relativistic macro-particles.',
+    'LCODE is a freely-distributed code for simulations of plasma wakefield acceleration. The quasistatic approximation is used for calculating plasma response. The beams are modeled by fully relativistic macro-particles.',
   alternates: {
     canonical: '/',
   },
@@ -43,12 +43,12 @@ export default function L3D() {
     {
       id: 1,
       title: 'Time-tested',
-      text: 'LCODE 2D, the basis for LCODE 3D, has been used to model a large number of installations and has shown good convergence with experimental results',
+      text: 'LCODE 2D, the basis for LCODE 3D, has been used to model a large number of problems and has shown good agreement with experimental results and other codes',
     },
     {
       id: 2,
       title: 'Fast',
-      text: 'Wake acceleration in the quasi-static approximation is computed several orders of magnitude faster than conventional PIC codes',
+      text: 'Wakefield acceleration in the quasistatic approximation is simulated several orders of magnitude faster than with conventional PIC codes',
     },
   ]
   return (

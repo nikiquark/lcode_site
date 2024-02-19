@@ -1,15 +1,13 @@
-import { Metadata } from 'next/types'
-import Image from 'next/image'
-import { FaAngleDown } from 'react-icons/fa'
-import Link from 'next/link'
-import { IoMdDocument } from 'react-icons/io'
-import TheoryList, { PaperList } from '@/components/TheoryList'
-import { IoInformationCircleOutline } from 'react-icons/io5'
 import HoverInfo from '@/components/HoverInfo'
+import TheoryList, { PaperList } from '@/components/TheoryList'
+import Link from 'next/link'
+import { Metadata } from 'next/types'
+import { FaAngleDown } from 'react-icons/fa'
+import { IoMdDocument } from 'react-icons/io'
 export const metadata: Metadata = {
   title: 'LCODE 2D —  code for simulations of plasma wakefield acceleration',
   description:
-    'LCODE is a freely-distributed code for simulations of particle beam-driven plasma wake eld acceleration. The quasi-static approximation is used for calculating plasma response. The beams are modeled by fully relativistic macro-particles.',
+    'LCODE is a freely-distributed code for simulations of plasma wakefield acceleration. The quasistatic approximation is used for calculating plasma response. The beams are modeled by fully relativistic macro-particles.',
   alternates: {
     canonical: '/2d',
   },
@@ -59,12 +57,12 @@ export default function L2D() {
     {
       id: 1,
       title: 'Time-tested',
-      text: 'LCODE 2D has been used to model a large number of installations and has shown good convergence with experimental results',
+      text: 'LCODE 2D has been used to model a large number of problems and has shown good agreement with experimental results and other codes',
     },
     {
       id: 2,
       title: 'Fast',
-      text: 'Wake acceleration in the quasi-static approximation is computed several orders of magnitude faster than conventional PIC codes',
+      text: 'Wakefield acceleration in the quasistatic approximation is simulated several orders of magnitude faster than with conventional PIC codes',
     },
   ]
   return (
@@ -81,10 +79,7 @@ export default function L2D() {
           <div className="flex flex-col gap-y-9 items-start">
             <h2 className="text-3xl lg:text-6xl">LCODE 2D</h2>
             <p className="text-xl lg:text-2xl xl:text-3xl">
-              LCODE is a freely-distributed code for simulations of particle
-              beam-driven plasma wakefield acceleration. The quasi-static
-              approximation is used for calculating plasma response. The beams
-              are modeled by fully relativistic macro-particles.
+            LCODE is a freely-distributed code for simulations of plasma wakefield acceleration. The quasistatic approximation is used for calculating plasma response. The beams are modeled by fully relativistic macro-particles.
             </p>
             <Link
               className="text-xl bg-gradient-to-r from-blue-500 to-green-500 rounded-md p-2 px-4 hover:shadow-[0_0_40px_rgba(8,_112,_184,_0.7)] duration-300"

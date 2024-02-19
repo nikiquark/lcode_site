@@ -94,7 +94,7 @@ export default function L2D() {
           className="flex flex-col items-center p-4 text-lg hover:-translate-y-2 duration-300"
         >
           {' '}
-          Explore
+          Узнать больше
           <FaAngleDown />{' '}
         </Link>
       </section>

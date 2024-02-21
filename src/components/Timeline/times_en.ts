@@ -28,7 +28,7 @@ const times: Timeline_item[] = [{
 {
     time: "15-20 June 2024",
     title: "Defense of students' final works",
-    desc: "This year we have 2 master’s students and 1 bachelor’s degree defending their defense.",
+    desc: "This year we have 2 master’s students degree defending their defense.",
 }]
 
 export default times;

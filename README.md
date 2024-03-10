@@ -4,6 +4,10 @@
 
 1. _Адекватно_ изменить нужный файл в `data/`
 2. Запустить в директории `npm run build`
+3. Если всё получилось, то делаем commit  
+   - git add .
+   - git commit -m "fix: <description>"
+   - git push
    
 
 ## Редактирование (Hard)
@@ -12,3 +16,7 @@
 
 1. _Аккуратно_ редактируем файлы в папке `src/`
 2. `npm run build`
+3. Если всё получилось, то делаем commit  
+   - git add .
+   - git commit -m "fix: <description>"
+   - git push

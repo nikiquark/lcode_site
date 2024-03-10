@@ -1,11 +1,11 @@
+import times from '@/../data/times_ru'
 import Timeline_en from '@/components/Timeline/Timeline_en'
-import times from '@/components/Timeline/times_ru'
 import { Metadata } from 'next/types'
 export const metadata: Metadata = {
   title: 'LCODE — Код для моделирования кильватерного ускорения',
   description: '',
   alternates: {
-    canonical: '/ru/students',
+    canonical: '/ru/events',
   },
 }
 

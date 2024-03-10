@@ -36,8 +36,8 @@ export default function RootLayout({
       text: 'LCODE 2D',
     },
     {
-      link: '/ru/students',
-      text: 'Студентам',
+      link: '/ru/events',
+      text: 'Мероприятия',
     },
   ]
   return (

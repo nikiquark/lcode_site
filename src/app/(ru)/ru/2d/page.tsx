@@ -114,7 +114,7 @@ export default function L2D() {
       </section>
       <section id="why-lcode" className="">
         <div className="flex flex-col items-center justify-center py-24 lg:py-56 md:px-32 2xl:px-72 clip-romb-mb lg:clip-romb  bg-[color:rgb(var(--secondary-bg-rgb))]">
-          <h2 className="text-3xl md:text-5xl mb-12">Why LCODE 2D?</h2>
+          <h2 className="text-3xl md:text-5xl mb-12">Почему LCODE 2D?</h2>
           <div className="flex flex-col lg:flex-row gap-12">
             {props.map(({ id, title, text }) => (
               <div key={id} className="flex flex-col gap-y-4 items-center">
@@ -153,24 +153,24 @@ export default function L2D() {
                 target="_blank"
                 href="https://lcode.info/site-files/lcode.exe"
               >
-                Executable for Windows
+                Файлы для Windows
               </a>
               <HoverInfo>
                 <pre>
                   {
                     "\
-Install MSMPI (runtime)\n\
+Установите MSMPI (runtime)\n\
   https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi\n\
 \n\
-For serial running:\n\
-  put lcode.exe in working directory with your lcode.cfg and run it with double-click\n\
+Для обычного запуска:\n\
+  Переместите lcode.exe в рабочую директорию с вашим lcode.cfg и запустите его двойным нажатием ЛКМ\n\
 \n\
-For parallel running:\n\
-  put lcode.exe in working directory with your lcode.cfg\n\
-  and run 'mpiexec -n <cpu-number> lcode.exe' in command line\n\
+Для параллельного запуска:\n\
+  Переместите lcode.exe в рабочую директорию с вашим lcode.cfg\n\
+  и запустите 'mpiexec -n <cpu-number> lcode.exe' в командной строке\n\
 \n\
 \n\
-If you have any problem with it, feel free to contact us. \n\
+Если у вас возникли какие-либо проблемы с lcode, пожалуйста, свяжитесь с нами. \n\
 "
                   }
                 </pre>
@@ -183,20 +183,20 @@ If you have any problem with it, feel free to contact us. \n\
                 target="_blank"
                 href="https://lcode.info/site-files/lcode-mpi-halfbaked.run"
               >
-                Executable for Linux
+                Файлы для Linux
               </a>
               <HoverInfo>
                 <pre className="">
                   {
                     '\
-`lcode-mpi-halfbaked.run`, should be executed on working host,\n\
-  will perform the final compilation step,\n\
-  linking the otherwise-precompiled LCODE with that host&apos;s MPI.\n\
-  This is theoretically unsupported, but works like a charm.\n\
+`lcode-mpi-halfbaked.run`, запущенный на компьютере, где вы будете запускать lcode,\n\
+  совершит последний этап компиляции,\n\
+  слинковав предварительно скомпилированный LCODE с MPI на данном компьютере.\n\
+  Теоретически это не поддерживается, но хорошо работает.\n\
 \n\
-It will produce lcode in current directory.\n\
+Это создать lcode в рабочей директории.\n\
 \n\
-If you have any problem with it, feel free to contact us. \n\
+Если у вас возникли какие-либо проблемы с lcode, пожалуйста, свяжитесь с нами. \n\
 '
                   }
                 </pre>

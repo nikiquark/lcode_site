@@ -1,9 +1,9 @@
+import '@/app/globals.css'
+import { Providers } from '@/app/provider'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import type { Metadata } from 'next'
 import { Nanum_Myeongjo } from 'next/font/google'
-import '@/app/globals.css'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import { Providers } from '@/app/provider'
 
 const nanum = Nanum_Myeongjo({ weight: '400', subsets: ['latin'] })
 
@@ -35,10 +35,10 @@ export default function RootLayout({
       link: '/2d',
       text: 'LCODE 2D',
     },
-    {
-      link: '/students',
-      text: 'For students',
-    },
+    // {
+    //   link: '/students',
+    //   text: 'For students',
+    // },
   ]
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
